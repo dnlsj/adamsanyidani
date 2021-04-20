@@ -18,6 +18,7 @@ public class BookDetails extends javax.swing.JFrame {
     }
     
     public void book() {
+        /*Kapcsolat létesítése az adatbázissal*/
         try {
             conn con = new conn();
             String sql = "select * from konyv";
@@ -121,7 +122,9 @@ public class BookDetails extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void b1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ActionPerformed
-       try{            
+       /*kapcsolat létesítés az adatbázissal, majd a t1 nevű text fieldbe bevitt adatok összehasonlítása az adatbázisban található adatokkal, amennyben van
+        egyezés akkor a táblázatban megjeleníti az adathoz tartozó sorban található értékeket*/
+        try{            
             conn con = new conn();
             if( evt.getSource() == b1){
                 String sql = "select * from konyv where concat(name, book_id) like ?";
@@ -141,6 +144,9 @@ public class BookDetails extends javax.swing.JFrame {
     }//GEN-LAST:event_b1ActionPerformed
 
     private void b2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ActionPerformed
+        
+        /*Kapcsolat létesítés az adatbázissal, majd a t1 text field-be beírt adathoz az adatbázisban tartozó sort törli az adatbázisból egy megerősítő 
+        kérdés megválaszolását követően, majd felugró ablak jelzi a törlés sikerességét*/
         try{
             
             conn con = new conn();
