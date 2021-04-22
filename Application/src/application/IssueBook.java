@@ -336,7 +336,10 @@ public class IssueBook extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void b1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ActionPerformed
-          try{
+        /*A keresés gomb megnyomásával kapcsolat létesítés az adatbázissal, majd a t1 nevű text field-be bevitt book_id
+        összehasonlítása a konyv nevű adatbázisban található book_id-kkal, ha van egyezés akkor az adatbázisban az egyező
+        book_id-hoz tartozó publisher, name, valamin price sorokban szereplő értékek kiírása*/
+        try{
             conn con = new conn();
             if(evt.getSource() == b1){
                 String sql = "select * from konyv where book_id = ?";
@@ -360,7 +363,10 @@ public class IssueBook extends javax.swing.JFrame {
     }//GEN-LAST:event_b1ActionPerformed
 
     private void b2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ActionPerformed
-       try{
+       /*A keresés gomb megnyomásával kapcsolat létesítés az adatbázissal, majd a t5 nevű text field-be bevitt student_id
+        összehasonlítása a tanulo nevű adatbázisban található student_id-kkal, ha van egyezés akkor az adatbázisban az egyező
+        student_id-hoz tartozó name, birth1, birth2, mother,cim sorokban szereplő értékek kiírása*/
+        try{
             conn con = new conn();
             if(evt.getSource() == b2){
                 String sql = "select * from tanulo where student_id = ?";
@@ -388,6 +394,8 @@ public class IssueBook extends javax.swing.JFrame {
     }//GEN-LAST:event_b2ActionPerformed
 
     private void b3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b3ActionPerformed
+        /*A kölcsönöz gomb megnyomásával kapcsolat létesítés az adatbázissal, majd a t1,t5,t3,t6,datac fielben lévő adatok átmásolása
+        az IssueKonyv adatbázisba*/
         try{
             conn con = new conn();
             if(evt.getSource() == b3){
@@ -400,14 +408,18 @@ public class IssueBook extends javax.swing.JFrame {
 		st.setString(4, t6.getText());
 		st.setString(5, ((JTextField) datac.getDateEditor().getUiComponent()).getText());
                 
-		int i = st.executeUpdate();
+		/*Adatbázis update-elése*/
+                int i = st.executeUpdate();
                 
+                /*Amennyiben a bevitt adatok megfeleőek akkor a kikölcsönözve feirattal ellátott ablak ugrik fel
+                amennyiben nem akkor pedig a Hiba*/
 		if (i > 0){
                     JOptionPane.showMessageDialog(null, "Kikölcsönözve");                 
                 }
 		else
                     JOptionPane.showMessageDialog(null, "Hiba");
                 
+                /*A t1-10 ig terjedő text field-ekbe bevitt adatok visszaálltása üresre*/                
                 t1.setText("");
                 t2.setText("");
                 t3.setText("");
@@ -430,6 +442,7 @@ public class IssueBook extends javax.swing.JFrame {
     }//GEN-LAST:event_b3ActionPerformed
 
     private void b4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b4ActionPerformed
+        /*A vissza gomb megnyomásával az ablak bezárul és megnyitja a Home ablakot*/
         if(evt.getSource() == b4){
                 this.setVisible(false);
 		new Home().setVisible(true);
