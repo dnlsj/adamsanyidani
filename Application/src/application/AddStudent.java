@@ -139,7 +139,7 @@ public class AddStudent extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void b1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ActionPerformed
- /*A hozzáadás gomb megnyomásával kapcsolat létesítési próba az adatbázissal, amennyiben sikerült akkor a t1-t6 mezőkbe bevitt adatok feltöltése az adatbázisba*/      
+ /*A hozzáadás gomb megnyomásával kapcsolat létesítési próba az adatbázissal, amennyiben sikerült akkor a t1-t6 mezőkbe bevitt adatok feltöltése az adatbázisba*/
         try{          
             if(evt.getSource() == b1){
                 try{
@@ -154,8 +154,8 @@ public class AddStudent extends javax.swing.JFrame {
                 st.setString(6, t6.getText());                          
                
 		int i = st.executeUpdate();
- /*IF elágazással megoldva, hogy amennyiben sikeres az adatok update-elése akkor Hozzáadva üzenet jelenjen meg, amennyiben sikertelen akkor Hiba üzenet. 
- Sikeres update-elés esetén az ablak bezárul és megnyitja a Home ablakot*/                
+ /*IF elágazással megoldjuk, hogy amennyiben sikeres az adatok update-elése akkor a Hozzáadva üzenet jelenjen meg, amennyiben sikertelen akkor Hiba üzenet.
+ Sikeres update-elés esetén az ablak bezárul és megnyitja a Home ablakot*/
 		if (i > 0){
                     JOptionPane.showMessageDialog(null, "Hozzáadva");
                     this.setVisible(false);
