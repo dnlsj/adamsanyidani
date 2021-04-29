@@ -105,7 +105,7 @@ public class Login extends javax.swing.JFrame {
 
  /* A begépelt adatok összevetése az adatbázisban szereplő adatokkal*/
                     ResultSet rs = st.executeQuery();       
- /*Ha egyezés van akkor a login ablak bezár és megnyitja a home ablakot*/
+ /*Ha egyezés van akkor a login ablak bezáródik és megnyitja a home ablakot*/
                     if (rs.next()) {
                         this.setVisible(false);             
                         new Home().setVisible(true);        
@@ -119,7 +119,7 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_bejActionPerformed
 
     private void regActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regActionPerformed
-  /*A regisztráció gomb megnyomásával az ablak bezárul és megnyitja a Signup ablakot*/      
+  /*A regisztráció gomb megnyomásával az ablak bezárul és megnyitja a Signup ablakot*/
         if(evt.getSource() == reg){
                 setVisible(false);
 		Signup su = new Signup();
