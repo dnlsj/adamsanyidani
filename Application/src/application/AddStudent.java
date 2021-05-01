@@ -154,7 +154,7 @@ public class AddStudent extends javax.swing.JFrame {
                 st.setString(6, t6.getText());                          
                
 		int i = st.executeUpdate();
- /*IF elágazással megoldjuk, hogy amennyiben sikeres az adatok update-elése akkor a Hozzáadva üzenet jelenjen meg, amennyiben sikertelen akkor Hiba üzenet.
+ /*IF elággal megoldjuk, hogy amennyiben sikeres az adatok update-elése akkor a Hozzáadva üzenet jelenjen meg, amennyiben sikertelen akkor Hiba üzenet.
  Sikeres update-elés esetén az ablak bezárul és megnyitja a Home ablakot*/
 		if (i > 0){
                     JOptionPane.showMessageDialog(null, "Hozzáadva");
