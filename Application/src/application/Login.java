@@ -105,7 +105,7 @@ public class Login extends javax.swing.JFrame {
 
  /* A begépelt adatok összevetése az adatbázisban szereplő adatokkal*/
                     ResultSet rs = st.executeQuery();       
- /*Ha egyezés van akkor a login ablak bezáródik és megnyitja a home ablakot*/
+ /*Ha egyezés van akkor a login ablak eltűnik és megnyitja a home ablakot*/
                     if (rs.next()) {
                         this.setVisible(false);             
                         new Home().setVisible(true);        
