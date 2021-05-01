@@ -91,7 +91,7 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     
- /*Bejelentkezés gomb megnyomása*/
+ /*Bejelentkezés gomb megnyomása */
     private void bejActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bejActionPerformed
         if(evt.getSource() == bej){
  /*Kapcsolódási kísérlet az adatbázishoz*/
