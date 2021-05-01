@@ -94,7 +94,7 @@ public class Login extends javax.swing.JFrame {
  /*Bejelentkezés gomb megnyomása */
     private void bejActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bejActionPerformed
         if(evt.getSource() == bej){
- /*Kapcsolódási kísérlet az adatbázishoz*/
+ /*Kapcsolódási kísérlet az adatbázishoz */
 		try {                   
                     conn con = new conn();
                     String sql = "select * from felhasznalo where username=? and password=?";
