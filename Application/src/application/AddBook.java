@@ -124,7 +124,7 @@ public class AddBook extends javax.swing.JFrame{
             if(evt.getSource() == b1){
                 String sql = "insert into konyv(book_id, publisher, name, price) values(?, ?, ?, ?)";
 		PreparedStatement st = (PreparedStatement) con.c.prepareStatement(sql);
-                // st.setInt(1, Integer.parseInt(textField.getText()));
+                //  st.setInt(1, Integer.parseInt(textField.getText()));
 		st.setString(1, t1.getText());
 		st.setString(2, t2.getText());
 		st.setString(3, t3.getText());
