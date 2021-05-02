@@ -18,7 +18,7 @@ public class BookDetails extends javax.swing.JFrame {
     }
     
     public void book() {
-        /*Kapcsolat létesítése az adatbázissal */
+        /*Kapcsolat létesítése az adatbázissal*/
         try {
             conn con = new conn();
             String sql = "select * from konyv";
