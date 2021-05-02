@@ -123,7 +123,7 @@ public class BookDetails extends javax.swing.JFrame {
 
     private void b1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ActionPerformed
        /*kapcsolat létesítés az adatbázissal, majd a t1 nevű text fieldbe bevitt adatok összehasonlítása az adatbázisban található adatokkal, amennyben van
-        egyezés akkor a táblázatban megjeleníti az adathoz tartozó sorban található értékeket */
+        egyezés akkor a táblázatban megjeleníti az adathoz tartozó sorban található értékeket*/
         try{            
             conn con = new conn();
             if( evt.getSource() == b1){
