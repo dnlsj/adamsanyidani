@@ -152,7 +152,7 @@ public class AddBook extends javax.swing.JFrame{
     }//GEN-LAST:event_b1ActionPerformed
 
     private void b2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ActionPerformed
- /*A vissza gomb megnyomásával az ablak bezárul és megnyitja a Home ablakot*/       
+ /*A vissza gomb megnyomásával az ablak bezárul és megnyitja a Home ablakot */       
         if(evt.getSource() == b2){
                 this.setVisible(false);
 		new Home().setVisible(true);
