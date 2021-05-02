@@ -138,7 +138,7 @@ public class AddBook extends javax.swing.JFrame{
 		else
                     JOptionPane.showMessageDialog(null, "Hiba");
                 
-/*Állítsa a t1-t4 mezőket üresre*/                
+/*Állítsa a t1-t4 mezőket üresre */                
                 t1.setText("");
                 t2.setText("");
                 t3.setText("");
