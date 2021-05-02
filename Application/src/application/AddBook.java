@@ -132,7 +132,7 @@ public class AddBook extends javax.swing.JFrame{
 
 		int rs = st.executeUpdate();
                 
- /*IF elágazással megoldva, hogy amennyiben sikeres az adatok update-elése akkor Hozzáadva üzenet jelenjen meg, amennyiben sikertelen akkor Hiba üzenet*/               
+ /*IF elágazással megoldva, hogy amennyiben sikeres az adatok update-elése akkor Hozzáadva üzenet jelenjen meg, amennyiben sikertelen akkor Hiba üzenet */               
 		if (rs > 0)
                     JOptionPane.showMessageDialog(null, "Hozzáadva");
 		else
