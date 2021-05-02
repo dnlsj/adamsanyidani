@@ -118,7 +118,7 @@ public class AddBook extends javax.swing.JFrame{
     }// </editor-fold>//GEN-END:initComponents
 
     private void b1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ActionPerformed
- /*A hozzáadás gomb megnyomásával kapcsolat létesítési próba az adatbázissal, amennyiben sikerült akkor a t1-t4 mezőkbe bevitt adatok feltöltése az adatbázisba  */      
+ /*A hozzáadás gomb megnyomásával kapcsolat létesítési próba az adatbázissal, amennyiben sikerült akkor a t1-t4 mezőkbe bevitt adatok feltöltése az adatbázisba*/      
         try{
             conn con = new conn();
             if(evt.getSource() == b1){
