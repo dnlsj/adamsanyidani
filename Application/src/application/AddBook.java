@@ -124,7 +124,7 @@ public class AddBook extends javax.swing.JFrame{
             if(evt.getSource() == b1){
                 String sql = "insert into konyv(book_id, publisher, name, price) values(?, ?, ?, ?)";
 		PreparedStatement st = (PreparedStatement) con.c.prepareStatement(sql);
-                // st.setInt(1, Integer.parseInt(textField.getText()));
+                //  st.setInt(1, Integer.parseInt(textField.getText()));
 		st.setString(1, t1.getText());
 		st.setString(2, t2.getText());
 		st.setString(3, t3.getText());
@@ -138,7 +138,7 @@ public class AddBook extends javax.swing.JFrame{
 		else
                     JOptionPane.showMessageDialog(null, "Hiba");
                 
-/*Állítsa a t1-t4 mezőket üresre*/                
+/*Állítsa a t1-t4 mezőket üresre */                
                 t1.setText("");
                 t2.setText("");
                 t3.setText("");
@@ -152,7 +152,7 @@ public class AddBook extends javax.swing.JFrame{
     }//GEN-LAST:event_b1ActionPerformed
 
     private void b2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ActionPerformed
- /*A vissza gomb megnyomásával az ablak bezárul és megnyitja a Home ablakot*/       
+ /*A vissza gomb megnyomásával az ablak bezárul és megnyitja a Home ablakot */       
         if(evt.getSource() == b2){
                 this.setVisible(false);
 		new Home().setVisible(true);

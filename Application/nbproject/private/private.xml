@@ -3,10 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/horto/OneDrive/Dokumentumok/NetBeansProjects/Application/src/application/IssueBook.java</file>
-            <file>file:/C:/Users/horto/OneDrive/Dokumentumok/NetBeansProjects/Application/src/application/AddStudent.java</file>
-            <file>file:/C:/Users/horto/OneDrive/Dokumentumok/NetBeansProjects/Application/src/application/StudentDetails.java</file>
-            <file>file:/C:/Users/horto/OneDrive/Dokumentumok/NetBeansProjects/Application/src/application/AddBook.java</file>
+            <file>file:/C:/Users/Daniel/Documents/GitHub/adamsanyidani/Application/src/application/BookDetails.java</file>
+            <file>file:/C:/Users/Daniel/Documents/GitHub/adamsanyidani/Application/src/application/Statistics.java</file>
+            <file>file:/C:/Users/Daniel/Documents/GitHub/adamsanyidani/Application/src/application/AddStudent.java</file>
+            <file>file:/C:/Users/Daniel/Documents/GitHub/adamsanyidani/Application/src/application/AddBook.java</file>
+            <file>file:/C:/Users/Daniel/Documents/GitHub/adamsanyidani/Application/src/application/conn.java</file>
+            <file>file:/C:/Users/Daniel/Documents/GitHub/adamsanyidani/Application/src/application/Signup.java</file>
+            <file>file:/C:/Users/Daniel/Documents/GitHub/adamsanyidani/Application/src/application/ReturnBook.java</file>
         </group>
     </open-files>
 </project-private>
